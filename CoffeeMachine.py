@@ -38,8 +38,6 @@ class CoffeeMachine:
 
 		print(beverage_name + " is prepared.")
 
-
-
 	def process(self, beverages):
 		loop = asyncio.get_event_loop()
 		for beverage_name in beverages:
