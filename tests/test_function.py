@@ -17,9 +17,9 @@ class TestSimple(unittest.TestCase):
 		first_item = list(machine.total_items_quantity.keys())[0]
 		first_value = machine.total_items_quantity[first_item]
 
-		machine.refill(first_item,100)
+		machine.refill(first_item, 100)
 
-		self.assertEqual(first_value+100, machine.total_items_quantity[first_item])
+		self.assertEqual(first_value + 100, machine.total_items_quantity[first_item])
 
 	def testReduce(self):
 		
